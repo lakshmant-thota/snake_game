@@ -1,9 +1,9 @@
 from turtle import Turtle
-from snake import Snake
+# from snake import Snake
 import random
 # one glitch is we can have the food at the location of the snake
 # so need to take care of the location of the food
-snake = Snake()
+# snake = Snake()
 class Food(Turtle):
 
     def __init__(self):
