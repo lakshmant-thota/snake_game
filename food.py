@@ -9,6 +9,7 @@ class Food(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("circle")
+        self.dot_number = 1
         self.penup()
         self.small_food()
         self.speed("fastest")
@@ -28,4 +29,9 @@ class Food(Turtle):
         # for seg in snake.segments:
         #     if seg.position()[0] == random_x and seg.position()[1] == random_y:
         #         self.refresh()
+        self.dot_number += 1
         self.goto(random_x, random_y)
+
+    def reset(self):
+        self.dot_number = 1
+        self.small_food()
